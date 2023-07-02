@@ -1,0 +1,446 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 10px;
+  background-color: #EFFFFE;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 6rem 1.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  transition: all .7s ease-in-out;
+}
+
+.sandwitch-item {
+  margin: .8rem 0;
+  width: 5rem;
+  height: .6rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 205, 188, 1);
+  transition: all .4s ease-in-out;
+}
+
+.sandwitch:hover .sandwitch-item {
+  background-color: #F4DDA5;
+}
+
+.close {
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+  left: 2rem;
+  display: none;
+  transition: all .4s ease-in-out;
+}
+
+.close:hover  div {
+  background-color: #F4DDA5;
+}
+
+.close > .left {
+  height: 100%;
+  width: .3rem;
+  background-color: rgba(0, 205, 188, 1);
+  transform: rotate(45deg);
+  position: absolute;
+
+}
+
+.close > .right {
+  height: 100%;
+  width: .3rem;
+  background-color: rgba(0, 205, 188, 1);
+  transform: rotate(-45deg);
+}
+
+.header-moved {
+  background-color: white;
+  box-shadow: 0 .2rem .2rem -.2rem rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+.logo {
+  width: 18rem;
+}
+
+.navbar {
+  display: flex;  
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.navbar-item {
+  list-style: none;
+  margin-left: 2.5rem;
+  font-size: inherit;
+  font-weight: 600;
+  color: rgba(0, 205, 188, 1);
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.navbar-item > a {
+  color: rgba(0, 205, 188, 1);
+}
+
+.navbar-item:hover  {
+  color: #F4DDA5;
+}
+
+.navbar-item > a:hover {
+  color: #F4DDA5;
+}
+
+.secondary-navbar {
+  display: none;
+}
+
+.book-demo {
+  background-color: rgba(0, 205, 188, 1);
+  color: white;
+  padding: .7rem 2rem;
+  border-radius: 1rem;
+  transition: all .4s ease-in-out;
+}
+
+.book-demo:hover {
+  opacity: .7;
+  color: white;
+}
+
+.main-section {
+  height: 85vh; 
+  position: relative;
+}
+
+.main-section-content {
+  margin-left: 5rem;
+  margin-top: 15rem;
+  width: 60rem;
+  z-index: 99;
+  position: absolute;
+}
+
+.main-section-content-title {
+  font-size: 5rem;
+  color: #00CDBC;
+  line-height: 7.5rem;
+}
+
+.content-keyword {
+  color:  #F4DDA5;
+}
+
+.main-section-right-image {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  /* width: 60rem; */
+  height: 100vh;
+  z-index: 0;
+
+}
+
+.main-section-content-paragraph {
+  margin-top: 2.5rem;
+  color: #B2B2B5;
+  font-size: 2rem;
+  width: 50rem;
+}
+
+.custom-btn {
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30vh;
+}
+
+.about-us-aside-image {
+  width: 60rem;
+  margin-left: 2.5rem;
+}
+
+.about-us-content-title {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #00CDBC;
+}
+
+.about-us-content-paragraph {
+  margin-top: 1.5rem;
+  color: #B2B2B5;
+  font-size: 2rem;
+  width: 45rem;
+
+}
+
+.about-us-content {
+  width: 60rem;
+}
+
+.our-service {
+  min-height: 100vh;
+  padding-top: 8rem;
+}
+
+.our-service-title-content {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  font-size: 3.5rem;
+  color: #00CDBC;
+}
+
+.our-service-paragraph {
+  margin-top: .3rem;
+  color: #B2B2B5;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.robot-description {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.our-service-robot-image {
+  height: 45rem;
+  margin-top: 3rem;
+}
+
+.robot-sub-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+  color: #B2B2B5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 18rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+
+
+.what-you-get-content {
+  margin-top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.what-you-get-card {
+  /* width: 20rem; */
+  width: fit-content;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 .4rem .4rem 0 #00000040;
+  border-radius: 2rem;
+  padding: 0 3.5rem;
+  padding-bottom: 4rem;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.what-you-get-card-image {
+  width: 22rem;
+}
+
+.what-you-get-paragraph {
+  width: 16rem;
+  color: #B2B2B5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  /* gap: 0 2.5rem; */
+
+  margin: 10rem 12rem;
+}
+
+.screen-without {
+  width: 20rem;
+  margin: auto;
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+}
+
+.screen-with {
+  width: 25rem;
+  transition: all .7s ease-in-out;
+  opacity: 0.3;
+}
+
+.kidcan-app {
+  margin-top: 25vh;
+}
+
+@media only screen and (max-width: 1100px) {
+  html, body {
+    font-size: 8px;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html, body {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html, body {
+    font-size: 7px;
+  }
+  .about-us-aside-image {
+    width: 45rem;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  /* html, body {
+    overflow: hidden;
+  } */
+
+  .secondary-navbar {
+    display: block;
+  }
+
+  .navbar-content {
+    display: none;
+  }
+
+  .screen-with {
+    width: 18rem;
+    height: auto;
+  }
+
+  .screen-without {
+    width: 15rem;
+  }
+
+  .header-sandwitch-activated {
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .navbar-content-sandwitch-activated {
+    position: absolute;
+    flex-direction: column; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: flex;
+  }
+
+  .navbar-content-sandwitch-activated > .navbar-item {
+      margin-bottom: 5rem;
+  }
+
+  .logo-sandwitch-activated {
+      display: none;
+  }
+
+  .sandwitch-activated { 
+    position: absolute;
+    top: 1.8rem;
+    right: 6rem;
+  }
+
+  .secondary-navbar-activated {
+    display: block;
+  }
+
+  .main-section-right-image {
+    z-index: 1;
+  }
+
+  .main-section-activated {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+html, body {
+  font-size: 5.5px;
+}
+
+  .main-section-right-image {
+    display: none;
+  }
+
+  .main-section-content {
+    top: 10%;
+  }
+
+  .about-us {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10rem 0;
+  }
+
+  .about-us-content {
+    width: fit-content;
+  }
+
+  .our-service-robot-image {
+    width: 35rem;
+  }
+
+  .screen-with {
+    width: 14rem;
+    height: auto;
+  }
+
+  .screen-without {
+    width: 12rem;
+
+  }
+}
